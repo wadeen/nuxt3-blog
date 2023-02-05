@@ -13,6 +13,8 @@
     "sass-loader": "^13.2.0"
   },
   "dependencies": {
+    "@nuxt/content": "^2.4.3",
+    "@nuxtjs/tailwindcss": "^6.3.1",
     "contentful": "^9.3.0"
   }
 }
