@@ -2,17 +2,10 @@
 const foo: string = "Hello by index.vue";
 </script>
 
-<template>
-  {{ foo }}です
-  <NuxtLink to="/about" class="hoge">Aboutページへ</NuxtLink>
-</template>
+<template>{{ foo }}です</template>
 
 <style scoped lang="scss">
-.hoge {
-  display: block;
-  width: fit-content;
-  &::before {
-    content: "◯";
-  }
+body {
+  background-color: tomato;
 }
 </style>
