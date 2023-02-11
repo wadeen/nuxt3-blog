@@ -1,13 +1,7 @@
 <template>
-  <div data-theme="winter" class="">
-    <header>
-      <!-- <Header /> -->
-    </header>
-    <main class="h-screen w-full grid overflow-auto">
-      <slot />
-    </main>
-    <footer>
-      <!-- <Footer /> -->
-    </footer>
-  </div>
+  <Header />
+  <main class="h-screen w-full grid overflow-auto">
+    <slot />
+  </main>
+  <Footer />
 </template>

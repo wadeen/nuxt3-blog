@@ -16,7 +16,7 @@ const props = defineProps({ post: Object });
           {{ props.post.fields.title }}
         </h2>
 
-        <span class="text-indigo-300 font-semibold">もっと見る...</span>
+        <span class="text-indigo-300 font-semibold">more...</span>
       </div>
     </NuxtLink>
   </div>
