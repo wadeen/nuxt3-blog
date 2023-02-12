@@ -9,12 +9,13 @@ const route = useRoute();
 const id = route.params.id;
 const { $client } = useNuxtApp();
 const { data } = await useAsyncData(id, () => $client.getEntry(id));
+
+console.log("$client: ", $client);
 </script>
 
 <template>
   <div>
     <SinglePost :post="data" />
-    Hello
   </div>
 </template>
 

@@ -1,4 +1,4 @@
-export type PostTypes = {
+type PostTypes = {
   post: {
     metadata: { tags: string[] };
     sys: {
@@ -20,3 +20,26 @@ export type PostTypes = {
     };
   };
 };
+
+// export default defineComponent({
+//   post: {
+//     metadata: { tags: [String] },
+//     sys: {
+//       // space: [Object];
+//       id: String,
+//       type: String,
+//       createdAt: String,
+//       updatedAt: String,
+//       // environment: [Object],
+//       revision: 2,
+//       contentType: [Object],
+//       locale: String,
+//     },
+//     fields: {
+//       title: String,
+//       createdAt: String,
+//       richText: [String],
+//       html: String,
+//     },
+//   },
+// });
