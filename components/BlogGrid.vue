@@ -6,18 +6,18 @@
         <p class="max-w-screen-md text-gray-500 md:text-lg text-center mx-auto">contentfulで管理しているブログの一覧です。<br />ページネーションやカテゴリ分類についてもやります！！</p>
       </div>
       <!-- Loading Skelton -->
-      <div v-if="!data" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8 animate-pulse">
+      <!-- <div v-if="!data" class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8 animate-pulse">
         <PostCard />
         <PostCard />
         <PostCard />
         <PostCard />
-      </div>
+      </div> -->
       <!-- Loading Posts -->
-      <div v-else class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
-        <span v-for="post in data?.items" :key="post.id">
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6 xl:gap-8">
+        <li v-for="post in data?.items" :key="post.id">
           <PostCard :post="post" />
-        </span>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
 </template>
@@ -28,5 +28,4 @@ import contentful from "contentful";
 const { $client } = useNuxtApp();
 
 const data = await $client.getEntries();
-// console.log("data!!!!!!!!!!!!!!!!: ", data);
 </script>
