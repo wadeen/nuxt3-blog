@@ -9,9 +9,6 @@ const route = useRoute();
 const id = route.params.id;
 const { $client } = useNuxtApp();
 const { data } = await useAsyncData(id, () => $client.getEntry(id));
-
-console.log("data: ", data);
-console.log("$client: ", $client);
 </script>
 
 <template>
@@ -20,8 +17,7 @@ console.log("$client: ", $client);
   </div>
 </template>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
 
 <!-- 
 const { data } = await useAsyncData('posts', async () => {

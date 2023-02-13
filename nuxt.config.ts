@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   ssr: false,
   // target: "static",
   modules: ["@nuxtjs/tailwindcss"],
+  // plugins: ["@/plugins/contentful"],
 
   vite: {
     server: {
