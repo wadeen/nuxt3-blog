@@ -1,8 +1,7 @@
-<script lang="ts" setup>
-// @ts-ignore // Todo: エラー解決する
-import dateToString from "/plugins/dateToString";
-// @ts-ignore // Todo: エラー解決する
-import PostTypes from "/types/PostTypes";
+<script setup>
+// lang="ts"
+import dateToString from "@/plugins/dateToString";
+import PostTypes from "@/types/PostTypes";
 
 const { post } = defineProps({ post: PostTypes });
 </script>

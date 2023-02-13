@@ -24,7 +24,7 @@
 
 <script setup>
 import { useNuxtApp } from "nuxt/app";
-import contentful from "contentful";
+// import contentful from "contentful";
 const { $client } = useNuxtApp();
 
 const data = await $client.getEntries();
