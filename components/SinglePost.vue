@@ -23,7 +23,7 @@ const postContent = post.fields.body;
   </div>
 </template>
 
-<!-- RichTextRenderer: scopesを外す -->
+<!-- RichTextRenderer: scopedを外す -->
 <style lang="scss">
 .content {
   color: #333;

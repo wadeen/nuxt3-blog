@@ -17,6 +17,7 @@
     "@nuxtjs/tailwindcss": "^6.3.1",
     "contentful": "^9.3.0",
     "contentful-rich-text-vue-renderer": "^3.0.1",
+    "contentful-typescript-codegen": "^3.4.0",
     "dayjs": "^1.11.7"
   }
 }
